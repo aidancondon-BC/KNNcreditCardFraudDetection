@@ -7,6 +7,7 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 
+# file from https://www.kaggle.com/datasets/mishra5001/credit-card?select=application_data.csv
 df = pd.read_csv('application_data.csv', engine='pyarrow').dropna()
 
 features = list(df.columns)
